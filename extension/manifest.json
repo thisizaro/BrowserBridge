@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "BrowserBridge Worker",
+  "version": "0.1",
+  "description": "BrowserBridge WebSocket worker",
+
+  "permissions": ["tabs", "scripting", "activeTab"],
+
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8000/*",
+    "ws://localhost:8000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

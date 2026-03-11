@@ -1,0 +1,6 @@
+.venv
+__pycache__/
+*.pyc   
+
+#although there is no env hehe... but why not. MAY BE FOR FUTURE. 
+.env
