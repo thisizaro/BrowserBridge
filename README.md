@@ -1,5 +1,21 @@
 # BrowserBridge
 
+### Personal Notes
+
+Hey, so basically I was working on making an AI automation where I needed the AI agent to be able to use my real browser session. But I couldn't use typical automation tools like Puppeteer, Selenium, or headless browsers, because they run in separate browser instances and don’t easily reuse my existing login session, cookies, and browser state.
+
+So I thought, why not make a minimal setup that allows me to control and use basic features of browsing programmatically from outside the browser. That’s how this project started. The initial goal was just to create a small bridge between external tools (like AI agents or automation workflows) and my actual browser session.
+
+Over time, the idea evolved a bit and eventually turned into the current setup you see here.
+
+If you have a better solution for this problem, or ideas to improve this project, definitely let me know! I’d love to hear it.
+
+And yeah, of course you guessed it right… it's 2026+ (and maybe even later when you're reading this), so I explained the project to an AI and let it help write the README 😂. But hey, it's still pretty good. Have fun! 😼🤓
+
+---
+
+# Introduction 
+
 BrowserBridge is a local browser automation interface that allows external systems such as AI agents, scripts, or workflow tools to control a real web browser through WebSocket commands.
 
 Unlike traditional automation tools, BrowserBridge operates inside the user's actual browser session. This means it preserves:
